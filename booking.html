@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking - Eventify Pro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top neon-navbar">
+        <div class="container">
+            <a class="navbar-brand neon-logo" href="index.html">
+                <i class="fa-solid fa-bolt"></i> Eventify Pro
+            </a>
+
+            <button class="navbar-toggler menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="booking.html">Booking</a></li>
+                </ul>
+
+                <a href="booking.html" class="neon-btn">Book Event</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container text-center">
+            <span class="hero-badge">Start Planning</span>
+            <h1>Book Your Dream Event</h1>
+            <p>Tell us your event idea and our creative team will contact you.</p>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+
+                <div class="col-lg-5">
+                    <div class="booking-glass">
+                        <h2>Why Eventify Pro?</h2>
+                        <p>We create bold, creative and premium event experiences.</p>
+
+                        <div class="booking-point"><i class="fa-solid fa-check"></i><span>Creative event concepts</span>
+                        </div>
+                        <div class="booking-point"><i class="fa-solid fa-check"></i><span>Stage, light and sound
+                                setup</span></div>
+                        <div class="booking-point"><i class="fa-solid fa-check"></i><span>Decor, catering and
+                                photography</span></div>
+                        <div class="booking-point"><i class="fa-solid fa-check"></i><span>Complete event
+                                execution</span></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="booking-glass">
+                        <h2>Event Booking Form</h2>
+
+                        <form id="eventBookingForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control neon-input" placeholder="Full Name" required>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <input type="email" class="form-control neon-input" placeholder="Email Address"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control neon-input" placeholder="Phone Number"
+                                        required>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <select class="form-control neon-input" required>
+                                        <option value="">Select Event Type</option>
+                                        <option>Wedding Event</option>
+                                        <option>Concert Event</option>
+                                        <option>Corporate Event</option>
+                                        <option>Birthday Party</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <input type="date" class="form-control neon-input" required>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <input type="text" class="form-control neon-input" placeholder="Budget Range"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <textarea rows="6" class="form-control neon-input"
+                                    placeholder="Describe your event idea..."></textarea>
+                            </div>
+
+                            <button type="submit" class="neon-submit-btn">Submit Booking</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="neon-footer">
+        <div class="container text-center">
+            <h3><i class="fa-solid fa-bolt"></i> Eventify Pro</h3>
+            <p>Creative premium event agency for unforgettable celebrations.</p>
+            <p>© 2026 Eventify Pro. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
